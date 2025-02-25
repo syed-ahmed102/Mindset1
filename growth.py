@@ -25,7 +25,7 @@ st.title("Datasweeper Sterling Integrator By Syed Ahmed Hassan")
 st.write("Transform your files between CSV and Excel formats with built-in data cleaning and visualization. Creating the project of Quarter 3!")
 
 #file uploader
-uploaded_files = st.file_uploader("Upload your files (accept CSV or Excel):", type=["csv","xlsx"], accept_multiple_files=(True))
+uploaded_files = st.file_uploader("Upload your files (accept CSV or XLSX):", type=["csv","xlsx"], accept_multiple_files=(True))
 
 if uploaded_files:
     for file in uploaded_files:
