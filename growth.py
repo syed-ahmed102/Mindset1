@@ -32,7 +32,8 @@ if uploaded_files:
         file_ext = os.path.splitext(file.name)[-1].lower()
 
         if file_ext == ".csv":
-            df = pd.read_csv(file)
+            df = pd.read_csv(file, encoding="utf-8")
+
             
         elif file_ext =="xlsx":
             df = pd.read_excel(file)
