@@ -52,7 +52,7 @@ if uploaded_files:
 
             with col1:
                 if st.button(f"Remove dublicate from : {file.name}"):
-                df.drop_duplicates(inplace=True)
+                    df.drop_duplicates(inplace=True)
                 st.write("Duplicate removed!")
            with col2:
                if st.button(f"Fill missing values for {file.name}"):
